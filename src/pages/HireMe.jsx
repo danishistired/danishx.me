@@ -98,7 +98,7 @@ const HireMe = () => {
       {/* Contact Buttons */}
       <div className="flex flex-wrap justify-center gap-4 mt-8">
         <a
-          href="https://www.linkedin.com/in/manish-kumar-mandrai/"
+          href="https://www.linkedin.com/in/danish--verma/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-200"
@@ -108,16 +108,16 @@ const HireMe = () => {
         </a>
 
         <button
-          onClick={() => copyToClipboard("+91 84352 1300", "phone")}
+          onClick={() => copyToClipboard("+91 94783 01569", "phone")}
           className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200"
         >
           <FaPhone className="text-lg" />
-          <span>{copied === "phone" ? "Copied!" : "+91 84352 13004 "}</span>
+          <span>{copied === "phone" ? "Copied!" : "+91 94783 01569 "}</span>
         </button>
 
         <button
           onClick={() =>
-            copyToClipboard("manishkumarmandrai@gmail.com", "email")
+            copyToClipboard("danish.verma1116@gmail.com", "email")
           }
           className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-all duration-200"
         >
@@ -127,7 +127,7 @@ const HireMe = () => {
       </div>
 
       <div className="text-center mt-8 text-gray-400 text-lg">
-        <p>Let's discuss over coffee or chai! ☕</p>
+        <p>Let me help you turn your ideas into pixels :)</p>
       </div>
     </div>
   );

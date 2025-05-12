@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import manish from "../assets/hsinam.png";
+import manish from "../assets/image.png";
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { Link } from "react-router-dom";
@@ -29,14 +29,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer text-white hover:text-blue-700 transition-colors duration-300" // LinkedIn blue
-              href="https://www.linkedin.com/in/manish-kumar-mandrai/"
+              href="https://www.linkedin.com/in/danish--verma/"
             >
               <CiLinkedin className="w-6.5 h-6.5 md:w-8 md:h-8" />{" "}
               {/* Reduced size to 80% */}
             </a>
 
             <a
-              href="https://x.com/ManishKumar3114?t=FqKTO6rQ9LfDA2gsHWiwaQ&s=09"
+              href="https://x.com/danishistired"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#000000]" // Twitter (X) black
@@ -73,8 +73,8 @@ const Footer = () => {
           <div className="w-28 h-[2px]  sm:hidden bg-black"></div>
           <button
             className="text-sm px-4 py-2 rounded-full border-2 border-[#ffffff] hover:bg-[#000000] transition duration-200"
-            onMouseOver={() => setLocation("Jabalpur (India)")}
-            onMouseOut={() => setLocation("23°11'33.9\"N 79°59'38.6\"E")}
+            onMouseOver={() => setLocation("Sirhind (India)")}
+            onMouseOut={() => setLocation("30°37'51.9\"N 76°23'47.0\"E")}
             style={{
               width: "240px", // Fixed width to prevent size change
               minHeight: "40px", // Ensure minimum height stays
@@ -87,10 +87,8 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="mt-8 border-t border-gray-700 pt-4 pb-0 mb-0 text-center text-gray-400">
-        <div className="text-[12px]">
-          © {currentYear} Manish Kumar. All Rights Reserved.
-        </div>
-        <div className="text-[12px]">Developed with ❤️ by Manish</div>
+        
+        <div className="text-[12px]">Developed with &lt;3 by Danish</div>
       </div>
     </footer>
   );

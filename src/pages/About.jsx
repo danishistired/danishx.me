@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
 import {
-  SiJavascript,
+  
   SiCplusplus,
   SiHtml5,
   SiCss3,
@@ -27,26 +27,36 @@ import {
   SiPostman,
   SiNetlify,
   SiVercel,
+  SiPython,
+  SiDart,
+  SiFlutter,
+  SiRender,
+  SiOpencv,
+  SiFlask,
 } from "react-icons/si";
-import Photo from "../assets/manish.png";
+import Photo from "../assets/danish.jpg";
 
 const skillsCategories = [
   {
     title: "Programming Languages",
     skills: [
-      { name: "JavaScript", icon: SiJavascript },
+      { name: "Python", icon: SiPython },
       { name: "C++", icon: SiCplusplus },
       { name: "HTML5", icon: SiHtml5 },
       { name: "CSS3", icon: SiCss3 },
+      { name: "Dart", icon: SiDart},
+      { name: "OpenCV", icon: SiOpencv },
     ],
   },
   {
     title: "Frontend Development",
     skills: [
+      { name: "Flutter", icon: SiFlutter },
       { name: "React.js", icon: SiReact },
       { name: "Bootstrap", icon: SiBootstrap },
       { name: "Responsiveness", icon: FaMobile },
       { name: "RESTful API ", icon: FaPlug },
+      
     ],
   },
   {
@@ -56,6 +66,7 @@ const skillsCategories = [
       { name: "Express.js", icon: SiExpress },
       { name: "RESTful API ", icon: FaCode },
       { name: "Authentication ", icon: FaShieldAlt },
+      { name: "Flask", icon: SiFlask },
     ],
   },
   {
@@ -81,6 +92,7 @@ const skillsCategories = [
       { name: "Netlify", icon: SiNetlify },
       { name: "Vercel", icon: SiVercel },
       { name: "Hostinger", icon: FaServer },
+      { name: "Render", icon: SiRender },
     ],
   },
 ];
@@ -109,36 +121,31 @@ const About = () => {
           </div>
 
           <div>
-            <h1 className="text-4xl font-bold mb-4">Manish Kumar</h1>
+            <h1 className="text-4xl font-bold mb-4">Danish Verma</h1>
             <h4 className="text-lg text-gray-300 mb-6">
-              Full-Stack Developer | C++ Programmer
+              App Developer | C++ Programmer 
             </h4>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Hi, I'm Manish Kumar, a passionate and detail-oriented Full-Stack
-              Web Developer and C++ Programmer. As a final-year college student,
-              I have hands-on experience in building dynamic and scalable web
-              applications using the MERN stack. My strong problem-solving
-              skills and deep understanding of algorithms enable me to write
-              efficient and optimized code.
+              when i was 12, more often than not, i found myself wanting a console.
+              although i never got one, my father did bring me a laptop once. the laptop broke 
+              before i did anything productive with it, but it did hook me to computers. 
             </p>
             <p className="text-gray-400 leading-relaxed mb-4">
-              With a keen eye for detail and a strong grasp of both front-end
-              and back-end technologies, I enjoy crafting seamless user
-              experiences and robust server-side architectures. I stay up to
-              date with emerging technologies and continuously refine my skills
-              to develop high-quality, scalable solutions.
+              i loved the weekly computer lab lectures we had back at my school and when covid hit,
+              i started learning python for real. jee was a huge break for me but since joining college
+              i have aimed at making great open source solutions to make life easier for people.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
-              I'm eager to collaborate with innovative teams, solve complex
-              challenges, and contribute to impactful projects. Let's connect
-              and create something amazing together! 🚀
+              I'm excited to contribute my skills and creativity to projects that
+              make a difference. Let's connect and explore how we can work
+              together to bring innovative ideas to life!
             </p>
           </div>
 
           <div className="flex justify-center space-x-6 text-2xl mt-6">
   
             <a
-              href="https://twitter.com"
+              href="https://x.com/danishistired"
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-500 hover:text-teal-300 transition-transform transform hover:scale-110"
@@ -146,7 +153,7 @@ const About = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/danish--verma/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-teal-500 hover:text-teal-300 transition-transform transform hover:scale-110"
@@ -176,8 +183,17 @@ const About = () => {
                   />
                 </div>
 
-                {openSections[index] && (
-                  <div className="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3 border border-white/10 p-4 rounded-xl">
+                {/* Animated skills grid */}
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out`}
+                  style={{
+                    maxHeight: openSections[index] ? "500px" : "0px",
+                    marginTop: openSections[index] ? "1rem" : "0",
+                  }}
+                >
+                  <div
+                    className={`grid grid-cols-2 sm:grid-cols-3 gap-3 border border-white/10 p-4 rounded-xl transition-all duration-500 ease-in-out ${openSections[index] ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                  >
                     {category.skills.map((skill, skillIndex) => (
                       <div
                         key={skillIndex}
@@ -194,7 +210,7 @@ const About = () => {
                       </div>
                     ))}
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>

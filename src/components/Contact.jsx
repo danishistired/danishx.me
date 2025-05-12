@@ -39,7 +39,7 @@ const Contact = () => {
       <h2 className="font-bold sm:text-center mb-12">Shoot me a message</h2>
 
       {/* Form Section */}
-      <div className="p-2rounded-lg">
+      <div className="p-2 rounded-lg">
         <form className="space-y-6" ref={form} onSubmit={sendEmail}>
           {/* Name and Email Fields */}
           <div className="flex flex-col sm:flex-row gap-4">

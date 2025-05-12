@@ -5,10 +5,10 @@ import { SiLeetcode } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 const socialLinks = [
-  { href: "https://leetcode.com/u/manishmandrai/", icon: SiLeetcode, color: "#FFA116" },
-  { href: "https://x.com/ManishKumar3114?t=FqKTO6rQ9LfDA2gsHWiwaQ&s=09", icon: FaXTwitter, color: "#000000" },
-  { href: "https://www.linkedin.com/in/manish-kumar-mandrai/", icon: CiLinkedin, color: "#0077B5" },
-  { href: "https://github.com/ManishMandrai", icon: FaGithub, color: "#181717" },
+  { href: "https://leetcode.com/u/dahahanish/", icon: SiLeetcode, color: "#FFA116" },
+  { href: "https://x.com/danishistired", icon: FaXTwitter, color: "#000000" },
+  { href: "https://www.linkedin.com/in/danish--verma/", icon: CiLinkedin, color: "#0077B5" },
+  { href: "https://github.com/danishistired", icon: FaGithub, color: "#181717" },
 ];
 
 const Socialicons = () => (

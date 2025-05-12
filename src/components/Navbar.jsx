@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/hsinam.png";
+import Logo from "../assets/image.png";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
@@ -21,8 +21,8 @@ const Navbar = () => {
           <NavLink to="/" className="flex-shrink-0">
             <img
               src={Logo}
-              alt="MANISH"
-              className="w-48 transition-transform" // Fixed size for all screens
+              alt="DANISH"
+              className="w-30 transition-transform" // Fixed size for all screens
             />
           </NavLink>
 

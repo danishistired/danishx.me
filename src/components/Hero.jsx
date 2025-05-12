@@ -12,6 +12,9 @@ import {
   SiFirebase,
   SiTailwindcss,
   SiCplusplus,
+  SiFlutter,
+  SiLinux,
+  SiPython,
 } from "react-icons/si";
 import Socialicons from "./Socialicons";
 import TextChange from "./TextChange";
@@ -20,10 +23,11 @@ import { GrWorkshop } from "react-icons/gr";
 const Hero = () => {
   const headingRef = useRef(null);
   const skills = [
-    { icon: SiJavascript, name: "JavaScript" },
-    { icon: SiReact, name: "React.JS" },
-    { icon: SiNodedotjs, name: "Node.JS" },
+    { icon: SiFlutter, name: "Flutter" },
     { icon: SiCplusplus, name: "C++" },
+    { icon: SiLinux, name: "Linux" },
+    { icon: SiPython, name: "Python" },
+    { icon: SiNodedotjs, name: "Node.JS" },
     { icon: SiFirebase, name: "Firebase" },
     { icon: SiTailwindcss, name: "Tailwind" },
   ];
@@ -49,7 +53,7 @@ const Hero = () => {
   }, []);
 
   // Split the name into individual characters
-  const name = "M A N I S H".split('');
+  const name = "D A N I S H".split('');
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen p-4 sm:p-10 md:p-20 overflow-hidden">
@@ -69,13 +73,11 @@ const Hero = () => {
           
           {/* Rest of your component remains the same */}
           <div className="font-bold text-[28px] sm:text-[36px] mt-8">
-            I'm a <TextChange />
+            I'm <TextChange />
           </div>
 
           <p className="text-gray-200 leading-relaxed mt-4 max-w-3xl mx-auto">
-            Turning coffee into code and ideas into reality—full-stack developer
-            crafting seamless, high-performance web apps that users love to
-            explore!
+            I turn concepts into code, problems into solutions, and ideas into reality. 
           </p>
 
           {/* Skills Section */}
